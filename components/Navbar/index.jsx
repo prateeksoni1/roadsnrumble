@@ -6,6 +6,10 @@ const Navbar = () => {
     <nav className={[classes.nav, classes.light].join(" ")}>
       <div className={classes.navContainer}>
         <div className={classes.logo}>roads'nrumble</div>
+        <div className={classes.spacer}></div>
+        <div className={classes.navItem}>contact</div>
+        <div className={classes.navItem}>blogs</div>
+        <div className={classes.navItem}>shop</div>
       </div>
     </nav>
   );

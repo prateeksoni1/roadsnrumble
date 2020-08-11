@@ -26,4 +26,12 @@
     font-weight: bold;
     font-family: $font1;
   }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .navItem {
+    margin-left: 2rem;
+  }
 }
