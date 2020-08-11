@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+
+.nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 64px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+
+  &.light {
+    color: #fff;
+  }
+
+  .navContainer {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-weight: bold;
+    font-family: $font1;
+  }
+}
