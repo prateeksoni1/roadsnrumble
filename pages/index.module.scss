@@ -15,22 +15,28 @@
     .column {
       text-align: center;
       h1 {
-        font-size: 4rem;
+        font-family: "Montserrat";
+        font-size: 5rem;
         text-transform: uppercase;
       }
 
       p {
-        margin-top: 2rem;
-        font-size: 1.5rem;
-        letter-spacing: 0.1rem;
+        margin-top: 4rem;
+        font-size: 2rem;
+        line-height: 3rem;
       }
 
       .btnContainer {
-        margin-top: 3rem;
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
 
         .heroBtn {
-          width: 30%;
-          margin-right: 1rem;
+          min-width: 30%;
+          font-size: 1.7rem;
+          margin-right: 2rem;
         }
       }
     }
