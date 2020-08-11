@@ -1,4 +1,5 @@
 @import "../../styles/variables";
+@import "../../styles/container.scss";
 
 .nav {
   position: fixed;
@@ -15,8 +16,6 @@
   }
 
   .navContainer {
-    width: 60%;
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;

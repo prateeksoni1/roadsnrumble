@@ -1,5 +1,40 @@
+@import "../styles/container.scss";
+@import "../styles/button.scss";
+
 .screen {
   min-height: 100vh;
-  background: url("../assets/images/hero-bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/images/hero-bg.jpg");
   background-size: cover;
+
+  .heroContent {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    .column {
+      width: 60%;
+
+      h1 {
+        font-size: 4rem;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+      }
+
+      .btnContainer {
+        margin-top: 3rem;
+
+        .heroBtn {
+          margin-top: 1rem;
+          display: block;
+          width: 40%;
+        }
+      }
+    }
+  }
 }

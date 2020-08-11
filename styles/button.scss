@@ -1,0 +1,17 @@
+@import "./variables";
+
+button.btn {
+  border: none;
+  outline: none;
+  background-color: $primaryColor;
+  color: #fff;
+  font-family: $font1;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  border-radius: 10px;
+
+  &.flat {
+    background-color: inherit;
+    border: 1px solid #fff;
+  }
+}
