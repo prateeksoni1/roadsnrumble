@@ -3,8 +3,7 @@
 
 .screen {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../assets/images/hero-bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   background-size: cover;
 
   .heroContent {
@@ -14,8 +13,7 @@
     color: #fff;
 
     .column {
-      width: 60%;
-
+      text-align: center;
       h1 {
         font-size: 4rem;
         text-transform: uppercase;
@@ -24,15 +22,15 @@
       p {
         margin-top: 2rem;
         font-size: 1.5rem;
+        letter-spacing: 0.1rem;
       }
 
       .btnContainer {
         margin-top: 3rem;
 
         .heroBtn {
-          margin-top: 1rem;
-          display: block;
-          width: 40%;
+          width: 30%;
+          margin-right: 1rem;
         }
       }
     }
