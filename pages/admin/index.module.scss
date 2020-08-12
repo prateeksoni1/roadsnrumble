@@ -16,13 +16,19 @@
     font-size: 3rem;
   }
 
-  input {
-    display: block;
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
+  .field {
     margin-bottom: 1rem;
-    border-radius: 10px;
-    outline: none;
+    input {
+      display: block;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .error {
+      color: #ff0000;
+    }
   }
 
   .btn {

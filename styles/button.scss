@@ -20,4 +20,8 @@ button.btn {
     background-color: inherit;
     border: 1px solid #fff;
   }
+
+  &:disabled {
+    background-color: #fcfcfc;
+  }
 }
