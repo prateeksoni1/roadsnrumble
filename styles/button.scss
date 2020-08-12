@@ -6,9 +6,15 @@ button.btn {
   background-color: $primaryColor;
   color: #fff;
   font-family: $font1;
-  padding: 1.2rem 2rem;
+  padding: 0.7rem 2rem;
   font-size: 1.3rem;
   border-radius: 10px;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(0.99);
+  }
 
   &.flat {
     background-color: inherit;
