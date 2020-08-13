@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/router";
 
 import "react-toastify/dist/ReactToastify.css";
+import "react-markdown-editor-lite/lib/index.css";
 import "../styles/index.scss";
 
 import Navbar from "../components/Navbar";
@@ -33,13 +34,22 @@ export default function MyApp({ Component, pageProps }) {
     }
   };
 
+  if (pageProps.admin) {
+    return (
+      <>
+        <Component {...pageProps} />
+        <ToastContainer />
+      </>
+    );
+  }
+
   return (
     <>
       {loading ? (
         <div>Loading...</div>
       ) : (
         <>
-          {!pageProps.disableNavbar ? <Navbar /> : null}
+          {!pageProps.disableNavbar && <Navbar />}
           <Component {...pageProps} />
           <ToastContainer />
         </>
