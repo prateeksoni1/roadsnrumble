@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import classes from "./index.module.scss";
 import api from "../../api";
 import { toast } from "react-toastify";
+import { login } from "../../api/auth";
 
 export async function getStaticProps(context) {
   return {
@@ -18,10 +19,9 @@ const AdminPage = () => {
   const router = useRouter();
 
   const handleSubmit = async (values, { setSubmitting }) => {
-    console.log(setSubmitting);
     setSubmitting(true);
     try {
-      const res = await api.post("/api/v1/admin/auth", values);
+      await login(values);
       localStorage.setItem("roads_token", res.data.token);
       router.push("/admin/dashboard");
     } catch (err) {
